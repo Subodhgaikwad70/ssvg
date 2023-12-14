@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    /* background-image: url('../assets/bg3.jpeg'); */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.login .container {
+    width: 350px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #EBEBEB;
+    color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.048);
+    /* box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e; */
+}
+
+.login .container i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    float: right;
+    filter: invert(100%);
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 101;
+}
+
+.login .container i:hover {
+    cursor: pointer;
+    background-color: #0000006e;
+    backdrop-filter: blur(10px);
+    border: 1px solid #000000af;
+}
+
+.login .container .slider {
+    width: 200%;
+    position: relative;
+    transition: transform ease-out 0.3s;
+    display: flex;
+}
+
+#register_toggle {
+    display: none;
+}
+
+.login .container #register_toggle:checked+.slider {
+    transform: translateX(-50%);
+}
+
+.login .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 1.5em 3em;
+    width: 50%;
+}
+
+.login .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    color: #ffffffb6;
+}
+
+.login form .form_control {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.login form .form_control .label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: transform ease 0.2s;
+    transform: translate(0%, -50%);
+    font-size: 0.8em;
+    user-select: none;
+    pointer-events: none;
+    color: transparent;
+}
+
+.login form .form_control .input {
+    width: 100%;
+    background-color: #47474769;
+    outline: none;
+    color: #fff;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ffffff42;
+    border-radius: 5px;
+    transition: box-shadow ease 0.2s;
+}
+
+.login form .form_control .input:focus,
+.login form .form_control .input:valid {
+    border: 2px solid #fff;
+    /* box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e; */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: #47474769 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.login form .form_control .input:focus+.label,
+.login form .form_control .input:valid+.label {
+    transform: translate(-150%, -50%);
+}
+
+.login form button {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    padding: 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: box-shadow ease 0.1s;
+    cursor: pointer;
+
+}
+
+.login form button:active {
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+}
+
+.login .bottom_text {
+    font-size: 0.75em;
+    color: #ffffffb2;
+}
+
+.login .bottom_text .swtich {
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

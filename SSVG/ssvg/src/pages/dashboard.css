@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+
+.dashboard .glass, .history .glass {
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    background: rgba(255, 255, 255, 0.048);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+    margin: 20px 10px;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    /* z-index: -1; */
+
+}
+
+.dashboard, .history {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.dashboard .container, .history .container {
+    width: 70%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard .title {
+    text-align: center;
+}
+
+.dashboard .title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.dashboard .container .c1.main {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.dashboard .container .c2 {
+    width: 40%;
+}
+
+.dashboard .container .c1 .r1 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+.dashboard .container .c1 .r1 .profile-photo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard .container .c1 .r1 img {
+    width: 60%;
+    aspect-ratio: 1;
+    /* aspect-ratio: 1/2; */
+    border-radius: 100%;
+}
+
+.dashboard .container .c1 .r1 .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.dashboard .container .c1 .r1 .details .name h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.dashboard .container .c1 .r1 .details .email h1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a563;
+    margin-top: 10px;
+    color: var(--color-white);
+}
+
+.dashboard .container .c1 .r2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 10%;
+    flex-grow: 1;
+}
+
+.dashboard .container .c1 .r2 .c1, .dashboard .container .c1 .r2 .c2 {
+    /* height: 150px; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.dashboard .updates {
+    width: 40%;
+    height: 500px;
+    margin: 0;
+}
+
+
+
+
+/* ------------- history --------------- */
+
+.history {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #ffffff00;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.history .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+

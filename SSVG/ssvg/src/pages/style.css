@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+body {
+    width: 100%;
+    background-image: url("../assets/bg1.jpeg");
+    /* background-color: #000000; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px); 
+    /* filter: brightness(1); */
+    /* filter: contrast(-100); */
+    margin: 0;
+    padding: 0;
+    font-family: AnoteTextFont, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif !important;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------- header -------------------- */
+
+.header.blur {
+    background-color: hsla(0, 0%, 57.6%, .1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.intro-text-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 0.91;
+    transform: translateY(-13.5px);
+    display: none;
+}
+
+.intro-text-container .intro-text {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.intro-text-container .intro-text h1 {
+    font-family: AnoteDisplayFont;
+    font-size: 79px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.intro-text-container .intro-text .button-group {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text-container .intro-text .button-group .download-button,
+.intro-text-container .intro-text .button-group button {
+    height: 60px;
+    width: 260px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    font-family: AnoteDisplayFont;
+    font-size: 21px;
+    margin: 0 6px;
+    border-radius: 1000px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    transition: all .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ----------------- laptop -------------------- */
+
+.laptop, .mobile {
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.laptop .container, .mobile .container {
+    display: flex;
+    width: 70%;
+}
+
+.laptop .c1 , .laptop .c2, .mobile .c1, .mobile .c2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laptop .c1 img {
+    width: 400px;
+}
+
+.laptop .c2 h1, .mobile .c2 h1{
+    width: 80%;
+    color: #fff;
+    text-wrap: wrap;
+    text-align: start;
+    font-size: 48px;
+}
+
+
+/* ------------ mobile ------------------- */
+
+.mobile .c1 img {
+    width: 200px;
+    /* height: 300px; */
+}
+
+
+/* ------------- services ------------------ */
+ 
+.services {
+    width: 100%;
+    /* height: 130vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.services .container {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.services .title {
+    padding: 5%;
+}
+
+.services .title h1{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.services .title p{
+    color: #ffffff80;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services .content {
+    display: flex;
+}
+
+.services .c1 img {
+    width: 80%;
+}
+
+.services .c1, .services .c2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.services .container .c2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .c2 .glass {
+    cursor: pointer;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    width: 280px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.048);
+    /* background: linear-gradient(#fff2, transparent); */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    transition: 0.1s;
+    border-radius: 20px;
+    margin: 10px 10px;
+    backdrop-filter: blur(10px);
+
+}
+
+.services .container .c2 .glass:hover {
+    transform: rotate(0deg);
+    scale: 1.1;
+}
+
+.services .container .c2 .glass p {
+    color: #ffffff73;
+}
+
+/* ----------------- plans ----------------------- */
+
+
+.plans {
+    /* background-color: rgb(0, 0, 0); */
+    /* height: 130vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.plans .container {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans .title {
+    padding: 5%;
+}
+
+.plans .title h1{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.plans .title p{
+    color: #ffffff80;
+    font-size: 20px;
+    text-align: center;
+}
+
+.plans .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.plans .c1 img {
+    width: 90%;
+}
+
+.plans .c1, .plans .c2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .container .c2 {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .container .c2 .glass {
+    cursor: pointer;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    /* background: #1b1b1bc2; */
+    /* background: linear-gradient(#fff2, transparent); */
+    background: rgba(255, 255, 255, 0.048);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    transition: 0.1s;
+    border-radius: 20px;
+    margin: 40px 10px;
+    backdrop-filter: blur(10px);
+
+}
+
+
+.plans .container .c2 .glass:hover {
+    transform: rotate(0deg);
+    scale: 1.1;
+}
+
+
+.plans .container .c2 .glass p {
+    color: #ffffff73;
+}
+
+
+
+/* ------------------ contacts ------------------------ */
+
+
+.contacts .container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .title {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.contacts a{
+    text-decoration: none;
+}
+
+.contacts .title h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.contacts .title p {
+    color: #ffffff6c;
+    font-size: 32px;
+}
+
+.contacts .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .content .r2 {
+    display: flex;
+}
+
+.contacts .glass {
+    cursor: pointer;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    width: 280px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.048);
+    /* background: linear-gradient(#fff2, transparent); */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    transition: 0.1s;
+    border-radius: 20px;
+    margin: 20px 10px;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.contacts .glass h1 {
+    margin-bottom: 10px;
+}
+
+.contacts .glass:hover {
+    transform: rotate(0deg);
+    scale: 1.1;
+}
+
+
+#instagram img{
+    width: 48px;
+}
